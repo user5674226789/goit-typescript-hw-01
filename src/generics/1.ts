@@ -1,5 +1,6 @@
+// import axios from "axios";
 
-import axios from "axios";
+import axios from "../../node_modules/axios/index";
 
 async function fetchData<T>(url: string): Promise<T> {
   try {
@@ -9,4 +10,3 @@ async function fetchData<T>(url: string): Promise<T> {
     throw new Error(`Error fetching from ${url}: ${error}`);
   }
 }
-

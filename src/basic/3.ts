@@ -1,3 +1,8 @@
-let a: number | string;
+let variant: string | number;
+variant = "OK";
+variant = "10";
 
-let b: "enable" | "disable";
+type EnableOrDisable = "enable" | "disable";
+let button: EnableOrDisable;
+button = "enable";
+button = "disable";

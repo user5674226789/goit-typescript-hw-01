@@ -1,17 +1,15 @@
-type Page = {
+interface Page {
   title: string;
   likes: number;
   accounts: string[];
-  status: "open" | "close";
+  status: string;
   details?: {
-    createAt?: Date;
-    updateAt?: Date;
+    createAt: Date;
+    updateAt: Date;
   };
-};
+}
 
-
-
-const page1:Page = {
+const page1: Page = {
   title: "The awesome page",
   likes: 100,
   accounts: ["Max", "Anton", "Nikita"],
@@ -22,7 +20,7 @@ const page1:Page = {
   },
 };
 
-const page2:Page = {
+const page2: Page = {
   title: "Python or Js",
   likes: 5,
   accounts: ["Alex"],
